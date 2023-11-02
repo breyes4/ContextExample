@@ -35,8 +35,8 @@ namespace ContextExample.Data
 
         public List<Movie> FindMovie(string title)
         {
-            // find by title - could return more than one item
-            return new List<Movie>();
+             var result = Movies.Where<Movie>(mov => mov.Title.ToLower().Contains(title.ToLower())); //Linq search with lambda, comparison lowercase to make it case insensitive 
+            return result.ToList();
         }
     }
 }
