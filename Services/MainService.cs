@@ -37,7 +37,7 @@ public class MainService : IMainService
                 }
                 else
                 {
-                    Console.WriteLine("Incorrect Movie ID. Try again please.");
+                    Console.WriteLine("Incorrect Movie ID. Try again please. ⟲ ");
                 }
                 break;
             
